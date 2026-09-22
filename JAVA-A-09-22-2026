@@ -1,1 +1,77 @@
+import java.util.Scanner;
 
+public class Main{
+  public static void main(String[] args){
+    System.out.println("Hello, World");
+
+    //declaring variable of different data types
+    int age = 20;
+    double price = 20.30;
+    float price1 = 34.3f;
+    char letter = 'J';
+    String name = "Joelouie";
+    boolean isStudent = true;
+
+    System.out.println("Age: " + age);
+    System.out.println("Price :" + price);
+    System.out.println("Price :" + price1);
+    System.out.println("Grade: " + letter);
+    System.out.println("Name: " + name);
+    System.out.println(isStudent);
+
+    Scanner scanner = new Scanner(System.in);
+    System.out.print("\nEnter your city: ");
+    String userCity = scanner.next();
+
+    System.out.println("You live in : " + userCity);
+        
+    //reading the full line 
+    scanner.nextLine();
+
+    System.out.print("\nEnter a sentence about your self: ");
+    String fullSentence = scanner.next();
+
+    System.out.println("You said: " + fullSentence);
+    scanner.close(); //to close the syntax
+
+    int a = 10, b = 3;
+    System.out.println(" a + b = " + (a + b));
+    System.out.println(" a - b = " + (a - b));
+    System.out.println(" a * b = " + (a * b));
+    System.out.println(" a / b = " + (a / b));
+    System.out.println(" a % b = " + (a % b));
+
+    double x = 10, y = 3;
+    System.out.println("x / y = " + (x / y));
+
+    //Relational Operator
+    System.out.println("\n a == b = " + (a == b));
+    System.out.println("\n a != b = " + (a != b));
+    System.out.println("\n a > b = " + (a > b));
+    System.out.println("\n a < b = " + (a < b));
+    System.out.println("\n a >= b = " + (a >= b));
+    System.out.println("\n a <= b = " + (a <= b));
+
+    //Logical Operator
+    boolean p = true, q = false;
+    System.out.println("\n p && q " + (p && q));
+    System.out.println("\n p || q " + (p || q));
+    System.out.println("\n !p  q " + (!p));
+    System.out.println("\n p && q " + (!q));
+
+    //Assignment Operator
+    int score = 50;
+    score += 10;
+    System.out.println("\n Score after += 10: "+ score);
+    score *= 2;
+    System.out.println("\n Score after *= 2: " + score);
+
+    //Increment
+    int counter = 5;
+    System.out.println("\nCounter ++ (post): " + counter ++);
+    System.out.println("\nCounter now: " + counter ++);
+    System.out.println("\n ++Counter (pre): " + +counter);
+
+
+  }
+}

@@ -32,7 +32,6 @@ public class Main{
     String fullSentence = scanner.next();
 
     System.out.println("You said: " + fullSentence);
-    scanner.close(); //to close the syntax
 
     int a = 10, b = 3;
     System.out.println(" a + b = " + (a + b));
@@ -72,6 +71,22 @@ public class Main{
     System.out.println("\nCounter now: " + counter ++);
     System.out.println("\n ++Counter (pre): " + +counter);
 
+    //Control Flow (if/ else, switch case, loops(for, while))
+    System.out.println("Enter your exam score: ");
+    int ExamScore = scanner.nextInt();
+    scanner.close();
 
+
+    if (ExamScore >= 90){
+      System.out.println("Grade: A");
+    }else if (ExamScore >= 80){
+      System.out.println("Grade: B");
+    }else if (ExamScore >= 70){
+      System.out.println("Grade: C");
+    }else{
+      System.out.println("Grade: F");
+    }
+
+    //Switch Case Statement
   }
 }
